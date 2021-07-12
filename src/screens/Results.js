@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, TouchableOpacity, FlatList, StyleSheet, StatusBar, Alert } from 'react-native';
+import { View, Text, Image, TouchableOpacity, FlatList, StyleSheet, StatusBar, Alert, SafeAreaView } from 'react-native';
 import Icon from 'react-native-vector-icons/dist/Entypo';
 import Loading from '../components/Loading'
 import _ from 'lodash'
@@ -53,7 +53,7 @@ function Results({ navigation, route }) {
 
 
     return (
-        <View style={Styles.pageView} >
+        <SafeAreaView style={Styles.pageView} >
             <View style={Styles.header}>
 
                 <TouchableOpacity onPress={() => navigation.goBack()} style={{ justifyContent: 'center', alignItems: 'center' }} >
@@ -83,7 +83,7 @@ function Results({ navigation, route }) {
 
 
             <Loading visible={loading} city={city.charAt(0).toUpperCase() + city.slice(1)} from={origen.charAt(0).toUpperCase() + origen.slice(1)} />
-        </View>
+        </SafeAreaView>
     );
 }
 

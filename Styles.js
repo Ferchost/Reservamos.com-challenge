@@ -20,7 +20,7 @@ searchView:{
 
     elevation: 5,
 },
-firstSearchView:{ flexDirection: 'row', height: '50%', width: '100%', alignItems: 'center', justifyContent: 'space-between', borderBottomWidth: 0.5, borderColor: 'gray' },
+firstSearchView:{ flexDirection: 'row', height: '50%', width: '100%', alignItems: 'center', justifyContent: 'space-between', borderBottomWidth: 0.5, borderColor: 'gray', flex:1 },
 secondSearchView:{ flexDirection: 'row', height: '50%', width: '100%', alignItems: 'center', justifyContent: 'space-between', borderBottomWidth: 0.5, borderColor: 'gray' },
 buttonRuta:{
     backgroundColor: '#b73c81', height: 60, width: '94%', alignSelf: 'center', marginTop: 23, borderRadius: 7, alignItems: 'center', justifyContent: 'center', shadowColor: "#000",
@@ -35,7 +35,7 @@ buttonRuta:{
 },
 textButtonRuta:{ fontFamily: 'OpenSans-SemiBold', fontSize: 18, color: "#fff" },
 //Results
-header:{ flexDirection: 'row', height: 70, width: '100%', backgroundColor: 'white', borderBottomLeftRadius: 12, borderBottomRightRadius: 12, justifyContent: 'space-between' },
+header:{ flexDirection: 'row', height: 70, width: '100%', backgroundColor: 'white', borderBottomLeftRadius: 12, borderBottomRightRadius: 12, justifyContent: 'space-between', marginTop:-18 },
 headerViewText:{ alignItems: 'center', justifyContent: 'center', alignSelf: 'center', marginRight: '3%' },
 item: {
     flexDirection: 'row',

@@ -119,7 +119,7 @@ class HomeScreen extends React.Component {
 
                         <Icon name="map-marker" size={30} color="#232323" style={{ width: '10%', marginLeft: '4%' }} />
                         <View style={{ width: 320, marginRight: 12 }}>
-                            <TextInput editable={false} value={this.state.destino} onChangeText={text => this.setState({ destino: text })} placeholder='Viajar a...' placeholderTextColor='gray' style={{ fontFamily: 'OpenSans-Light', fontSize: 18,color:"#232323" }} />
+                            <TextInput editable={false} value={this.state.destino} onChangeText={text => this.setState({ destino: text })} placeholder='Viajar a...' placeholderTextColor='gray' style={{ fontFamily: 'OpenSans-Light', fontSize: 18,color:"#232323", flex:2 }} />
                         </View>
 
                     </TouchableOpacity>
